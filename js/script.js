@@ -31,7 +31,6 @@ var fibonacci = [01, 02, 03, 05, 08, 13, 21];
     //* Máximo de 14 números 
     //* Média de 9 números 
     //? Pedir entre 8 e 12 números 
-    //TODO: Pegar ultimo jogo via API da lotofácil
 const jogoRepetido = [03, 05, 06, 08, 11, 12, 13, 14, 15, 19, 21, 22, 23, 24, 25];
 
 document.getElementById('button').addEventListener('click', ()=>{
