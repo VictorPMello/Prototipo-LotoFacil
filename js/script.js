@@ -97,7 +97,7 @@ document.getElementById('button').addEventListener('click', ()=>{
                 `
                 <div>
                   <strong>${i}</strong>
-                  <span>${numeros}</span>
+                  <p>${numeros}</p>
                 </div>
                 `;
               i++;

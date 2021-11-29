@@ -4,9 +4,10 @@
   --background: #264653;
   --background-button: #6c757d;
   --background-button-hover: #f8f9fa;
-  --text: #e9ecef;
+  --text: #cecece;
   --text-hover: #495057;
-  --span: #a9aca9;
+  --span: #ffffff;
+
 }
 
 *{
@@ -17,13 +18,21 @@
   color: var(--text);
 }
 
-body{
-  width: 100%;
+html, body{
+  width: 100vw;
   height: 100%;
   background: var(--background);
+  text-align: center;
+}
+
+h2{
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 input[type=number]{
+  width: 50%;
   margin-top: 1rem;
   background: var(--background);
   border: .15rem solid var(--text);
@@ -38,16 +47,16 @@ input[type=number]::-webkit-outer-spin-button{
 }
 
 div.buttons{
-  display: flex;
-  flex-direction: row;
-  margin-top: 1rem;
+  display: block;
+  margin: 0 auto;
 }
 
 button{
-  width: 10rem;
-  height: 3rem;
+  height: 2rem;
+  width: 4.5rem;
+  margin: .5rem 1rem;
+  font-size: 1rem;
   display: inline-block;
-  margin: 1rem 2rem;
   background: var(--background-button);
   border-radius: 1rem;
   border: none;
@@ -60,24 +69,70 @@ button:hover{
   color: var(--text-hover);
 }
 
-div{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+div.res{
+  display: block;
+  margin: 1rem 1rem;
   margin-top: 2rem;
 }
 
 div > div{
   display: block;
+  margin-bottom: 2rem;
 }
 
 strong{
   font-weight: 700;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-right: .5rem;
+  display: block;
+  margin-bottom: .5rem;
 }
 
-span{
+strong, p{
+  font-size: 50%;
+}
+
+p{
   color: var(--span);
+}
+
+@media screen and (min-width: 720px){
+  html, body{
+    width: 100%;
+  }
+
+  h2{
+    font-size: 2rem;
+  }
+
+  input[type=number]{
+    width: 70%;
+  }
+  
+  div.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1rem;
+  }
+
+  button{
+    width: 10rem;
+    height: 3rem;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  div.res{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  strong{
+    margin-right: .5rem;
+  }
+
+  strong, p{
+    font-size: 1.5rem;
+  }
 }
