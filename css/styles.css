@@ -77,7 +77,7 @@ div.res{
 
 div > div{
   display: block;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 strong{
@@ -93,7 +93,6 @@ strong, p{
 
 p{
   color: var(--span);
-  margin-botton: 2rem;
 }
 
 @media screen and (min-width: 720px){
