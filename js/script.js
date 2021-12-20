@@ -1,12 +1,12 @@
   //! Números pares
-    //* Minimo de 3 números 
+    //* Minimo de 2 números 
     //* Máximo de 12 números 
     //* Média de 7 números 
     //? Pedir entre 5 e 8 números 
 const numerosPares = [02, 04, 06, 08, 10, 12, 14, 16, 18, 20, 22, 24];
 
   //! Números impares
-    //* Minimo de 2 números 
+    //* Minimo de 3 números 
     //* Máximo de 13 números 
     //* Média de 8 números 
     //? Pedir entre 5 e 9 números 
@@ -28,17 +28,20 @@ var fibonacci = [01, 02, 03, 05, 08, 13, 21];
 
   //! Jogo repetido
     //* Minimo de 5 números 
-    //* Máximo de 14 números 
+    //* Máximo de 15 números 
     //* Média de 9 números 
     //? Pedir entre 8 e 12 números 
 const jogoRepetido = [03, 05, 06, 08, 11, 12, 13, 14, 15, 19, 21, 22, 23, 24, 25];
 
 document.getElementById('button').addEventListener('click', ()=>{
-  //TODO For(i = 0; i < x) | i++ dentro do ultimo if/function
+
+  //TODO while(i <= x) | i++ dentro do ultimo if/function
+
+  var i = 1;
   const quantSorteio = parseInt(document.getElementById("quantSorteio").value);
   let saida = document.getElementById('res');
 
-  for(i = 1; i <= quantSorteio; ){
+  while(i <= quantSorteio){
   //! Gerar array com 15 números aleatórios entre 1 e 25 
     let numeros = [];
       
